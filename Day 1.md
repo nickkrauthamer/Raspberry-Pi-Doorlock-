@@ -1,5 +1,5 @@
 # Voice-Activation-Raspberry-Pi
-Voice activation of an LED light using raspberry pi
+Voice activation of LED light using raspberry pi
 
 ## Flash image of raspian lite onto Raspberry Pi 3
 Used etcher to flash over to Raspberry Pi 3
