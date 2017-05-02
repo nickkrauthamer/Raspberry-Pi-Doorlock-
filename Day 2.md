@@ -1,7 +1,7 @@
 # Turn on LED via Raspberry Pi 3
 Connect LED to breadboard using two jumper cables to pin 6 and 12 on the pi
 
-Use 330 ohm resistor to limit the current flow
+Use 330 ohm resistor to limit the current flow.
 
 Script
 ```shell
