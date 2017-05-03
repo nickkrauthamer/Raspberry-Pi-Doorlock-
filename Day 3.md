@@ -12,6 +12,10 @@ git clone git://github/StevenHickson/PiAUISuite.git
 cd PiAUISuite/Install\
 ./InstallAUISuite.sh
 ```
+## Install Voice command library
+```shell
+sudo apt-get install libboost-regex1.49.0
+```
 Edit config file located in /home/pi/PiAUISite/VoiceCommand/commands.conf
 ```shell
 light==/home/pi/scripts/led...
