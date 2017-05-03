@@ -82,3 +82,4 @@ time.sleep(3)
 print "LED off"
 GPIO.output(18,GPIO.LOW)
 ```
+https://cloud.githubusercontent.com/assets/28270453/25677336/95483dd6-3013-11e7-9ce2-9d105d02d8c6.png
