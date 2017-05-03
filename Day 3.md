@@ -6,13 +6,17 @@ Script
 apt-get update
 apt-get install git-y
 ```
-#3 Install the WiringPi Library to send and reveive data through the GPIO pins using high level languages like shell or python
+Installing SH vocie recognition software
 ```shell
-cd~/
-git clone git://git.drogon.net/wringPI
-cd wiringPi
-./build
+git clone git://github/StevenHickson/PiAUISuite.git
+cd PiAUISuite/Install\
+./InstallAUISuite.sh
 ```
+Edit config file located in /home/pi/PiAUISite/VoiceCommand/commands.conf
+```shell
+light==/home/pi/scripts/led...
+```
+
 Tweakaudio settings to automatically enable the audio capbilities at boot
 ```shell
 sudo apt-get update
