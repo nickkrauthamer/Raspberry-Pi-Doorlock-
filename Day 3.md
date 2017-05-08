@@ -37,3 +37,42 @@ Run following code
 sudo amixer cset numid=3 1
 sudo alsactl store
 ```
+## Configure USB Webcam Microphone on RASPBIAN
+### Changes default adio input to be the Built0in Webcam Mic, and the default sound output to be the normal 3.5mm jack on the Raspberry Pi.
+Edit alsa.conf file to set USB device as default.  Find lines "defaults.ctl.card 0" and replace the "0" with "1"
+```shell
+defaults.ctl.card 1
+defaults.pcm.card 1
+```
+Next edit the ALSA configuration file .asoundrc. using nano to edit the file
+```shell
+sudo nano ~/.asoundrc
+```
+Script should look like
+```shell
+pcm.!default {
+         type asym
+         playback.pcm {
+                 type plug
+                 slave.pcm "hw:0,0"
+         }
+         capture.pcm {
+                 type plug
+                 slave.pcm "hw:1,0"
+         } 
+ }
+
+ ctl.!default {
+        type hw
+        card 0
+}
+```
+Test microphone following commands.
+Record audio using
+```shell
+arecord test.wav
+```
+Play audio using
+```shell
+aplay test.wav
+```
