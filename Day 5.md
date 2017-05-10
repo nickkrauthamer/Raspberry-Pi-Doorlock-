@@ -104,3 +104,4 @@ blynk-client 715f8cafe95f4a91bae319d0376caa8c
 ```
 You can write your own script based on https://github.com/vshymanskyy/blynk-library-js/tree/master/examples
 #### To enable Blynk auto restart for Pi, find /etc/rc.local file and add "node full_path_to_your_script.js <Auto Toekn>
+![blynk](https://cloud.githubusercontent.com/assets/28270453/25913983/af9d3c50-358a-11e7-83c5-03c37438dc5d.png)
