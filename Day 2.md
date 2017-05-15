@@ -2,7 +2,7 @@
 
 # Downloading Vocie StevenHickson Voice Activation
 ## Initializing
-Check whether microphone or webcam is detected by Raspberry Pi and the microphone volumes are high. First step is to check webcam and microphone are listed using the following command
+Check whether microphone or webcam is detected by Raspberry Pi and the microphone volumes are high. First step is to check webcam and microphone are listed using the following command.
 ```shell
 lsusb
 ```
