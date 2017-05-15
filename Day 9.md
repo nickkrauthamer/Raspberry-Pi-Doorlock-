@@ -118,4 +118,40 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.1.0/modules \
     -D BUILD_EXAMPLES=ON ..
 ```
-    
+If compiling OpenCV 3 for Python 2.7 make sure Python 2 section includes valid paths to the Interpreter, Libraries, numpy, and packages path
+Compile OpenCV
+```shell
+make -j4
+```
+Install OpenCV 3 on Raspberry Pi 3
+```shell
+sudo make install
+sudo ldconfig
+```
+## Finish installing OpenCV on your Pi
+Verify Open CV is isntalled in /usr/local/lob/python2.7/site-packages using the ls command (example below)
+```shell
+ls -l /usr/local/lib/python2.7/site-packages/
+total 1852
+-rw-r--r-- 1 root staff 1895772 Mar 20 20:00 cv2.so
+```
+Final step is to sym-link the OpenCV bindings into our cv virtual environment for python 2.7
+```shell
+cd ~/.virtualenvs/cv/lib/python2.7/site-packages/
+ln -s /usr/local/lib/python2.7/site-packages/cvs2.so cv2.so
+```
+## Testing OpenCV 3 install
+Open a new terminal, execute the source and workon commands, then attempt to import the Python + OpenCV bindings
+```shell
+source 
+~/.profile
+workon cv
+python
+>>> import cv2
+>>> cv2.__version__
+'3.1.0'
+>>>
+```
+Once OpenCV has been installed, you can remove both the opencv3.1.0 and opencv_contrib-3.1.0 directories to free up a bunch of space on the disk (Make sure OpenCV has been properoly istalled on system before getting rid of these directories. 
+```shell
+rm -rf opencv-3.1.0 opencv_contrib-3.1.0
