@@ -24,7 +24,7 @@ cd Smartphone-Doorlock/
 sudo npm install
 ```
 If using lite version of raspian jessie, do the following- 
-``shell
+```shell
 wget abysz.co.uk/rpi/pigpio/pigpio.zip
 unzip pigpio.zip
 make
