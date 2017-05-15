@@ -69,7 +69,7 @@ To get full install of OpenCV, get the opencv_contrib repository
 wget -O opencv_contrib.zip https://github.com/itseez/opencv_contrib/archive/3.1.0.zip
 unzip opencv_contrib.zip
 ```
-## install pop ( a Python package manager)
+## Install pop (a Python package manager)
 ```shell
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
