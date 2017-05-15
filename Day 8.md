@@ -27,7 +27,7 @@ framerate_100
 sudo nano /etc/default/motion
 start_motion_daemon = yes
 ```
-## To start and stop the motion service
+### To start and stop the motion service
 ```shell 
 sudo service motion start
 sudo service motion stop
