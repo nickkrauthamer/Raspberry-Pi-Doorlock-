@@ -7,7 +7,7 @@ sudo raspi-config
 ```
 REBOOT
 ```shell
-sudo reboot
+sudo reboot now
 ```
 Raspberry Pi 3 + Raspbian Jessie + Open CV
 ```shell
