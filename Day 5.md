@@ -1,7 +1,7 @@
 # Setting up Raspberry Pi using Blynk Smartphone App
 ## Wiring Pi
 ### Install Wiring Pi
-Wiring Pi is used to switch the GPIO pins high and low.
+Wiring Pi is used to switch the GPIO pins high and low
 #### Download instructions
 ```shell
 sudo apt-get install git-core
