@@ -31,8 +31,7 @@ then enter command
 ```shell
 sudo nano/etc/modules
 ```
-Reboot Raspberry Pi.
-Run following code
+Reboot Raspberry Pi,and run following code
 ```shell
 sudo amixer cset numid=3 1
 sudo alsactl store
