@@ -1,0 +1,28 @@
+1) Problem - Sending IP address upon boot of Raspberry Pi
+   Solution - A dealy at boot was needed because the ip address was not reveived at boot and the e-mail was not sending.
+2) Problem - Had to install Git-client before installing Github libraries
+   Solution - Installed Git-client then Github libraries
+3) Problem - Audio settings had to be set at every reboot
+   Solution - Had to tweak audio settings to automatically enable the audio capabilities at boot
+4) Problem - The default audio output was through the HDMI
+   Solution - Had to reroute the audio settings to use the 3.5mm audio output
+5) Problem - Test records and playbacks were working but did not work with the Steven Hickson Voice Reccognition software
+   Solution - The issue was that the google coice recognition software does not allow multi-channel mic inputs. The settings needed to be tweaked to only allow mono input
+6) Problem - The config file of the cice command was not connecting with the WiringPi
+   Solution - A line with the WiringPi Directory needed to be added
+7) Problem - Changes in the alleged conifg files were not shown
+   Solution - There was a seperate MakeFile that was in the install directory
+8) Problem - Steven Hickson Vociec Recognition Software was not working
+   Solution - Scrapped project and moved onto remote controlled lock project
+9) Problem - Ran into issues with nmp (Node Package Manager) because we were using the lite version of Raspian Jessie
+   Solution - Installed NPM through alternate methods
+10) Problem - After installing motion, the default settings were not working
+    Solution - Changed the config file as following
+    DAEMON = ON
+    Webcam_localhost = OFF
+    IPV6_ON
+    Webcontrol_localhost = OFF
+    output_pictures off
+    ffmpeg output_movies off
+    stream_maxrate 100
+    framerate_100
