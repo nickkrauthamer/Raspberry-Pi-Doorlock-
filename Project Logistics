@@ -1,0 +1,16 @@
+List of parts
+1) Raspberry Pi 3 ($45)
+2) High Servo motor ($20)
+3) Vertical Door lock ($9)
+4) 3d printed case (Free)
+5) wire set with breadboard and resistors ($20)
+6) Webcam ($20)
+Total Cost - $114
+
+List of Programs Used
+Blynk App, and Blynk Library
+
+Raspberry Pi Info
+OS - Raspian Jessie
+RPI version - Rasberry Pi 3b
+Python Version - 2.7
